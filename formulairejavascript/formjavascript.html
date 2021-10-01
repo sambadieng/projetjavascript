@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire javascript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formjavascript.css">
+</head>
+<body>
+	<div class="a1">
+	     <table border="2">
+		    <tr>
+			         <th width="500px" height="50px" class="a0">
+			             Formulaire				
+			         </th>
+		        </tr>
+		        <tr  bgcolor="#3acaf9;">
+		      	<td height="530px">
+		      		<div class="divmax">
+		      		<form  id="form" action="formjavascript1.html">
+		      		
+		      		<input type="text" id="nom" name="nom"
+		      		 placeholder="Nom" class="a2"><br>
+		      		 <input type="email" id="email" name="email"
+		      		 placeholder="email" class="a3"><br>
+		      		 <input type="password" id="motpass" name="motpass"
+		      		 placeholder="Mot de passe" class="a4"><br>
+		      		 <div class="a6">
+		      	 	
+
+		      	 	<input type="button" id="champ" value="Creer un compte">
+		      		 </div>
+		      		 </div>
+		      	 	</form>
+		      	 	<script type="text/javascript">
+		      	 	var	champ= document.getElementById("champ");
+		      	 		champ.addEventListener('click',function mo_function(){
+		      	 			document.getElementById("form").submit();
+		      	 		})
+		      	 	</script>
+
+
+
+
+		      	</td>
+		    </tr>
+	    </table>
+  </div>
+</body>
+</html>
