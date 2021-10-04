@@ -1,0 +1,25 @@
+button{
+	font-size: 20px;
+	width: 50px;
+	padding: 11px 20px 10px 20px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+input{
+	width: 220px;
+	margin-left: 15px;
+	padding-left: 10px;
+
+}
+#ce{
+	width: 50px;
+	padding-left: 10px;
+	padding-right: 30px;
+}
+.divmax{
+	padding-top: 10px;
+	width: 260px;
+	height: 320px;
+	background-color: silver;
+	margin: 50px auto;
+}

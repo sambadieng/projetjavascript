@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALCULATRICE</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="calculatrice.css">
+</head>
+<body>
+	<div class="divmax">
+       <input type="text" value="" placeholder="0" id="result"><br>
+       <button value="CE" id="ce" onclick="c();">CE</button>
+        <button value="←" id="sup" onclick="suppr();">←</button>
+        <button value="/100" id="pourcent" onclick="pourcent();">%</button>
+        <button value="+" id="plus" onclick="plus();">+</button><br>
+        <button value="7" id="sept" onclick="sept();">7</button>
+         <button value="8" id="huit" onclick="huit();">8</button>
+         <button value="9" id="neuf" onclick="neuf();">9</button>
+         <button value="-" id="moins" onclick="moins();">-</button><br>
+         <button value="4" id="quatre" onclick="quatre();">4</button>
+         <button value="5" id="cinq" onclick="cinq();">5</button>
+         <button value="6" id="six" onclick="six();">6</button>
+         <button value="*" id="mult" onclick="mult();">*</button><br>
+         <button value="1" id="un" onclick="un();">1</button>
+         <button value="2" id="deux" onclick="deux();">2</button>
+         <button value="3" id="trois" onclick="trois();">3</button>
+         <button value="/" id="division" onclick="division();">/</button><br>
+         <button value="0" id="zero" onclick="zero();">0</button>
+         <button value="±" id="plmo" onclick="plusumoins();">±</button>
+         <button value="." id="virgule" onclick="virgule();">,</button>
+         <button value="=" id="egale" onclick="egale();">=</button>
+     </div>
+
+     <script type="text/javascript">
+     	function zero(){
+     		 var x= document.getElementById("zero").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function un(){
+     		 var x= document.getElementById("un").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function deux(){
+     		 var x= document.getElementById("deux").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function trois(){
+     		 var x= document.getElementById("trois").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function quatre(){
+     		 var x= document.getElementById("quatre").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function cinq(){
+     		 var x= document.getElementById("cinq").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function six(){
+     		 var x= document.getElementById("six").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+        function sept(){
+     		 var x= document.getElementById("sept").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+         function huit(){
+     		 var x= document.getElementById("huit").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+        function neuf(){
+     		 var x= document.getElementById("neuf").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function egale(){
+     		var valeur=document.getElementById("result").value;
+     		  var resultabsolu=eval(valeur);
+     		document.getElementById("result").value=resultabsolu;
+     	}
+     	        function plus(){
+     		 var x= document.getElementById("plus").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	 function moins(){
+     		 var x= document.getElementById("moins").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+        function mult(){
+     		 var x= document.getElementById("mult").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+        function division(){
+     		 var x= document.getElementById("division").value;
+     		 var val=document.getElementById("result").value;
+     		 document.getElementById("result").value=val+x;
+     	}
+     	function c(){
+     		document.getElementById("result").value="";
+     	}
+        function suppr(){
+        	
+        	var  valeur= document.getElementById("result").value;
+        	var   long =valeur.length;
+        	var   term=long - 1;
+        	valeur =valeur.substring(0, term);
+            document.getElementById("result").value=valeur 
+
+        }
+        function pourcent(){
+        	var  valeur= document.getElementById("result").value;
+        	var x=document.getElementById("pourcent").value;
+        	document.getElementById("result").value=valeur+ x;
+
+        }
+        function virgule(){
+        	var x=document.getElementById("virgule").value;
+        	var valeur=document.getElementById("result").value;
+        	document.getElementById("result").value =valeur+x;
+        }
+        function plusumoins(){
+        	  
+        	var valeur= document.getElementById("result").value;
+        	if (valeur>0) {
+        		valeur=document.getElementById("result").value="-"+valeur;
+        	}
+        	else if (valeur<0) {
+              var   valeur=document.getElementById("result").value=-1*valeur ;
+
+        	}
+        }	
+         </script>
+</body>
+</html>
